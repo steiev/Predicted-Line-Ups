@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicted Line-Ups - Top 5 Europäische Ligen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚽ Predicted Line-Ups</h1>
+            <p class="subtitle">Voraussichtliche Aufstellungen der Top 5 Europäischen Ligen</p>
+        </header>
+
+        <div class="league-filter">
+            <button class="filter-btn active" data-league="all">Alle Ligen</button>
+            <button class="filter-btn" data-league="PL">Premier League</button>
+            <button class="filter-btn" data-league="PD">La Liga</button>
+            <button class="filter-btn" data-league="BL1">Bundesliga</button>
+            <button class="filter-btn" data-league="SA">Serie A</button>
+            <button class="filter-btn" data-league="FL1">Ligue 1</button>
+        </div>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Lade Spiele...</p>
+        </div>
+
+        <div id="matches-container" class="matches-container"></div>
+
+        <div id="error-message" class="error-message" style="display: none;">
+            <p>Fehler beim Laden der Daten. Bitte versuchen Sie es später erneut.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
