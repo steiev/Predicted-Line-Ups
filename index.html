@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicted Line-Ups - Europäische Topligen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>⚽ Predicted Line-Ups</h1>
+        <p>Voraussichtliche Aufstellungen der Europäischen Topligen</p>
+    </header>
+
+    <main>
+        <div class="leagues-filter">
+            <button class="league-btn active" data-league="all">Alle</button>
+            <button class="league-btn" data-league="39">🏴󠁧󠁢󠁥󠁮󠁧󠁿 Premier League</button>
+            <button class="league-btn" data-league="140">🇪🇸 La Liga</button>
+            <button class="league-btn" data-league="78">🇩🇪 Bundesliga</button>
+            <button class="league-btn" data-league="135">🇮🇹 Serie A</button>
+            <button class="league-btn" data-league="61">🇫🇷 Ligue 1</button>
+        </div>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Lade Spiele...</p>
+        </div>
+
+        <div id="matches-container" class="matches-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Predicted Line-Ups. Daten werden in Echtzeit abgerufen.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
