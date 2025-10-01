@@ -1,0 +1,1 @@
+{\n  "name": "football-lineup-backend",\n  "version": "1.0.0",\n  "main": "index.js",\n  "license": "MIT",\n  "scripts": {\n    "start": "node index.js"\n  },\n  "dependencies": {\n    "axios": "^1.6.0",\n    "cors": "^2.8.5",\n    "express": "^4.18.2"\n  }\n}
